@@ -42,14 +42,14 @@ def convert(bot: Bot, update: Update):
 
 
 __help__ = """
- - /cash : currency converter
- example syntax: /cash 1 USD INR
+ - /currency : currency converter
+ example syntax: /currency 1 USD INR
 """
 
-CONVERTER_HANDLER = CommandHandler('cash', convert)
+CONVERTER_HANDLER = CommandHandler('currency', convert)
 
 dispatcher.add_handler(CONVERTER_HANDLER)
 
 __mod_name__ = "Currency Converter"
-__command_list__ = ["cash"]
+__command_list__ = ["currency"]
 __handlers__ = [CONVERTER_HANDLER]
